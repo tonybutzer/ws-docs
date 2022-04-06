@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Right Now &mdash; LiDAR in the cloud 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tallgrass and Caldera User Guide" href="90_tallgrass.html" />
+    <link rel="prev" title="V0 WaterSmart User’s Guide to Evapo Pipeline Processing" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> LiDAR in the cloud
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Right Now</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#steffi">Steffi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tony">Tony</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="90_tallgrass.html">Tallgrass and Caldera User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="90_tallgrass.html#how-to-cheat-at-slurm">How to Cheat at Slurm</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LiDAR in the cloud</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Right Now</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/10_right_now.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="right-now">
+<h1>Right Now<a class="headerlink" href="#right-now" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="steffi">
+<h2>Steffi<a class="headerlink" href="#steffi" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">staging</span> <span class="n">netet</span> <span class="k">for</span> <span class="n">caldera</span> <span class="n">download</span>
+<span class="o">-</span> <span class="n">run</span> <span class="n">rclone</span> <span class="n">to</span> <span class="n">send</span> <span class="nb">all</span> <span class="mi">20</span> <span class="n">years</span> <span class="n">of</span> <span class="n">netet</span> <span class="n">daily</span> <span class="n">to</span> <span class="n">caldera</span>
+<span class="o">-</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">downstream</span> <span class="n">customer</span> <span class="n">work</span> <span class="ow">is</span> <span class="n">reasonably</span> <span class="n">scheduled</span> <span class="n">given</span> <span class="n">the</span> <span class="n">high</span> <span class="n">volume</span> <span class="n">of</span> <span class="n">data</span> <span class="o">-</span> <span class="n">the</span> <span class="n">variability</span> <span class="n">of</span> <span class="n">network</span> <span class="n">speeds</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">overall</span> <span class="n">complexity</span> <span class="n">of</span> <span class="n">the</span> <span class="n">pipelines</span><span class="o">.</span> <span class="n">Improve</span> <span class="n">deliverable</span> <span class="n">estimates</span> <span class="n">through</span> <span class="n">negotiation</span> <span class="ow">and</span> <span class="n">benchmarks</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tony">
+<h2>Tony<a class="headerlink" href="#tony" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">finish</span> <span class="n">conus</span> <span class="n">mosaic</span> <span class="n">using</span> <span class="n">talgrass</span> <span class="n">this</span> <span class="n">week</span>
+<span class="o">-</span> <span class="n">start</span> <span class="n">building</span> <span class="n">a</span> <span class="n">document</span>
+<span class="o">-</span> <span class="n">Teach</span> <span class="n">steffi</span> <span class="n">markdown</span> <span class="n">meets</span> <span class="n">pycharm</span> <span class="n">meets</span> <span class="n">local</span> <span class="n">jupyter</span>  <span class="n">notebook</span> <span class="n">conda</span><span class="o">-</span><span class="n">shell</span> <span class="n">jupyter</span> <span class="n">etc</span><span class="o">...</span>
+	<span class="o">-</span> <span class="n">place</span> <span class="n">this</span> <span class="n">work</span> <span class="ow">in</span> <span class="n">steffis</span> <span class="n">favorite</span> <span class="n">git</span> <span class="n">repo</span> <span class="o">-</span> <span class="n">subservant</span> <span class="n">to</span> <span class="n">this</span> <span class="n">ws</span><span class="o">-</span><span class="n">docs</span> <span class="n">repo</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="90_tallgrass.html" class="btn btn-neutral float-right" title="Tallgrass and Caldera User Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="V0 WaterSmart User’s Guide to Evapo Pipeline Processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

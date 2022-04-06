@@ -10,6 +10,7 @@ V0 WaterSmart User's Guide to Evapo Pipeline Processing
    :maxdepth: 2
    :caption: Contents:
 
+   10_right_now.md
    90_tallgrass.md
 
 Indices and tables
