@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ET Process Overview &mdash; ET in the cloud 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ET in the cloud
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="10_right_now.html">Right Now</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="10_right_now.html#steffi">Steffi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_right_now.html#tony">Tony</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="90_tallgrass.html">Tallgrass and Caldera User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="90_tallgrass.html#how-to-cheat-at-slurm">How to Cheat at Slurm</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ET in the cloud</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>ET Process Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/20_process_overview.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="et-process-overview">
+<h1>ET Process Overview<a class="headerlink" href="#et-process-overview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="buckets">
+<h2>Buckets<a class="headerlink" href="#buckets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>ws-in – all of our inputs - soils; climate/temperature; NDVI(MODIS) etc</p></li>
+<li><p>ws-out – primary use is for chip outputs for</p></li>
+</ul>
+</div>
+<div class="section" id="compute">
+<h2>Compute<a class="headerlink" href="#compute" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ec2">
+<h3>Ec2<a class="headerlink" href="#ec2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Amazon Linux - RedHat derivative</p></li>
+<li><p>t3a-2xlarge – personal pangeo</p></li>
+<li><p>memory optimized</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(tendollar) [ec2-user@ip-10-12-68-5 ~]$ costs
+costs all things are relative
+[&#39;awsprice.py&#39;, &#39;butzer&#39;]
+butzer
+      state                                    name            ip       i_type  monthly_cost
+0   running                 butzer-ws-bigship-intel  10.12.68.185   m5.4xlarge       560.640
+1   stopped  butzer-ws-mini-pangeo-persistent-vtest   10.12.68.63  t3a.2xlarge       219.584
+2   running                  butzer-ws-olena-pangeo   10.12.69.13  t3a.2xlarge       219.584
+3   stopped       butzer-ws-ss-conus2-intel-bigship  10.12.67.237   m5.4xlarge       560.640
+4   running                    butzer-ws1-tendollar    10.12.68.5     t2.small        16.790
+5   stopped                 butzer-ws-steffi-pangeo   10.12.69.15   t3a.xlarge       109.792
+6   stopped                 butzer-ws-joshua-pangeo  10.12.68.101  t3a.2xlarge       219.584
+7   running                   butzer-ws-cole-pangeo  10.12.69.251  t3a.2xlarge       219.584
+8   stopped             butzer-ws-ss-conus-hugeship  10.12.68.238   m5.8xlarge      1121.280
+9   stopped                   butzer-ws-ss-conus-h3   10.12.68.73  m5.16xlarge      2242.560
+10  stopped                   butzer-ws-ss-conus-h4   10.12.69.85  m5.16xlarge      2242.560
+11  stopped              butzer-ws-ss-conus-bigship   10.12.69.56   m5.8xlarge      1121.280
+12  stopped            butzer-ws-ss-conus-hugeship2  10.12.68.149   m5.8xlarge      1121.280
+==========================================================================================
+==========================================================================================
+     state                     name            ip       i_type  monthly_cost
+0  running  butzer-ws-bigship-intel  10.12.68.185   m5.4xlarge       560.640
+2  running   butzer-ws-olena-pangeo   10.12.69.13  t3a.2xlarge       219.584
+4  running     butzer-ws1-tendollar    10.12.68.5     t2.small        16.790
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="delivery-to-the-end-user">
+<h2>Delivery to the end-user<a class="headerlink" href="#delivery-to-the-end-user" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>rclone to caldera at EROS</p></li>
+<li><p>deep archive on Netapp W: drive</p></li>
+</ul>
+</div>
+<div class="section" id="time-estimate-table">
+<h2>Time Estimate Table<a class="headerlink" href="#time-estimate-table" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Task</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Run The Model CONUS</td>
+<td>3days</td>
+</tr>
+<tr>
+<td>Mosaic the Chips CONUS</td>
+<td>5 Days</td>
+</tr>
+<tr>
+<td>Stage the Daily Data S3</td>
+<td>1 Day</td>
+</tr>
+<tr>
+<td>Rclone to Caldera per Variable</td>
+<td>5 days</td>
+</tr>
+<tr>
+<td>Tallgrass - Make Conus Mosaic per Variable</td>
+<td>20 Days</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
