@@ -54,8 +54,19 @@ butzer
 
 | Task                                       | Time    |
 |--------------------------------------------|---------|
-| Run The Model CONUS                        | 3days   |
+| Run The Model CONUS                        | 3 Days   |
 | Mosaic the Chips CONUS                     | 5 Days  |
 | Stage the Daily Data S3                    | 1 Day   |
-| Rclone to Caldera per Variable             | 5 days  |
+| Rclone to Caldera per Variable             | 5 Days  |
 | Tallgrass - Make Conus Mosaic per Variable | 20 Days |
+
+
+Legend:
+
+:white_check_mark: = Complete
+
+:white_check_mark:(\*) = Complete, but not final
+
+:repeat: = In progress
+
+:x: = Not Started Yet
