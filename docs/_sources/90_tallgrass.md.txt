@@ -7,6 +7,9 @@
 
 - cd opt/etm_v3_tony
 
+- conda activate pangeo
+- cd tallgrass
+- cd conus_api_etm
 
 ## How to Cheat at Slurm
 
