@@ -1,5 +1,13 @@
 # Tallgrass and Caldera User Guide
 
+## Run Conus Mosaics on Tallgrass
+
+- make salloc - to allocate a node for 1 hour
+- make shell - to get a bash in the new allocation
+
+- cd opt/etm_v3_tony
+
+
 ## How to Cheat at Slurm
 
 ```
