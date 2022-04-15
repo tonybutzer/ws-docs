@@ -98,6 +98,8 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Tallgrass and Caldera User Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#run-conus-mosaics-on-tallgrass">Run Conus Mosaics on Tallgrass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-algorythm">General Algorythm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-cheat-at-slurm">How to Cheat at Slurm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#hpc-references">HPC References</a></li>
 </ul>
@@ -177,6 +179,42 @@
 <li><p>conda activate pangeo</p></li>
 <li><p>cd tallgrass</p></li>
 <li><p>cd conus_api_etm</p></li>
+</ul>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>make test</p></li>
+</ul>
+</div>
+<div class="section" id="general-algorythm">
+<h2>General Algorythm<a class="headerlink" href="#general-algorythm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>parameters</p>
+<ul>
+<li><p>year</p></li>
+<li><p>in  # input path</p></li>
+<li><p>out # output path</p></li>
+</ul>
+</li>
+<li><p>command_line_runner</p>
+<ul>
+<li><p>get input parameters</p></li>
+<li><p>call mos.run_mosaic</p></li>
+</ul>
+</li>
+<li><p>run_mosaic (cos_mosaic.py)</p>
+<ul>
+<li><p>get subfolders</p></li>
+<li><p>_do_just_one_day  ( for each day 1,365)</p></li>
+</ul>
+</li>
+<li><p>_do_just_one_day</p>
+<ul>
+<li><p>DS = xr_build_mosaic_ds(bucket, p, tifs) - # bucket here is extraineous</p></li>
+<li><p>xr_write_geotiff_from_ds(DS, primary_name, out_prefix_path)</p></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="how-to-cheat-at-slurm">

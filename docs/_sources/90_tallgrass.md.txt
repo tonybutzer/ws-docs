@@ -11,6 +11,28 @@
 - cd tallgrass
 - cd conus_api_etm
 
+## Testing 
+
+- make test
+
+## General Algorythm
+
+- parameters
+    - year
+    - in  # input path
+    - out # output path
+- command_line_runner
+    - get input parameters
+    - call mos.run_mosaic
+
+- run_mosaic (cos_mosaic.py)
+    - get subfolders
+    - _do_just_one_day  ( for each day 1,365)
+
+- _do_just_one_day
+    - DS = xr_build_mosaic_ds(bucket, p, tifs) - # bucket here is extraineous
+    - xr_write_geotiff_from_ds(DS, primary_name, out_prefix_path)
+
 ## How to Cheat at Slurm
 
 ```
