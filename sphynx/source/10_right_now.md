@@ -7,6 +7,8 @@
 
 ## Tony
 - finish conus mosaic using tallgrass this week
+    - get rid of etmLib in talgrass world
+    - investigate compress='DEFLATE' on rio create raster code from DS
 - start building a document
 - Teach steffi markdown meets pycharm meets local jupyter  notebook conda-shell jupyter etc...
 	- place this work in steffis favorite git repo - subservant to this ws-docs repo
