@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Steffi Notes &mdash; ET in the cloud 1.0 documentation</title>
+  <title>Document Outline &mdash; ET in the cloud 1.0 documentation</title>
   
 
   
@@ -82,8 +82,11 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Steffi Notes</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Document Outline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#other-training">Other Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#steffi-notes">Steffi Notes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#making-html-from-markdown">Making HTML from Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#push-to-git">Push to Git</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="10_right_now.html">Right Now</a><ul>
@@ -154,7 +157,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Steffi Notes</li>
+      <li>Document Outline</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -173,7 +176,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="steffi-notes">
+  <div class="section" id="document-outline">
+<h1>Document Outline<a class="headerlink" href="#document-outline" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>ec2-instance creation</p></li>
+<li><p>Running the Model</p>
+<ul>
+<li><p>Using Docker to Scale</p>
+<ul>
+<li><p>Tiles and Chips</p></li>
+<li><p>Running single small regions</p></li>
+</ul>
+</li>
+<li><p>Config files YAML</p></li>
+<li><p>Logging and Outputs</p></li>
+</ul>
+</li>
+<li><p>Mosaicking Chips to Tiles</p></li>
+<li><p>Mosaicking Tiles to CONUS</p>
+<ul>
+<li><p>Sending files to HPC-Caldera - using rclone</p></li>
+<li><p>Slurm 101</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="other-training">
+<h1>Other Training<a class="headerlink" href="#other-training" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Linux/UNIX Shell –&gt; BASH</p></li>
+<li><p>Jupyter Notebooks</p></li>
+<li><p>ssh</p>
+<ul>
+<li><p>ssh keys why and how?</p></li>
+</ul>
+</li>
+<li><p>ec2 -starting and stopping</p>
+<ul>
+<li><p>console</p></li>
+<li><p>pinstance</p></li>
+<li><p>shell - shutdown -h now</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="steffi-notes">
 <h1>Steffi Notes<a class="headerlink" href="#steffi-notes" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
 <li><p>find steffi documentation notes</p></li>
@@ -183,6 +230,17 @@
 <h2>Making HTML from Markdown<a class="headerlink" href="#making-html-from-markdown" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>cd sphynx/source; make</p></li>
+</ul>
+</div>
+<div class="section" id="push-to-git">
+<h2>Push to Git<a class="headerlink" href="#push-to-git" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>cd ~/opt/ws-docs; make publish</p>
+<ul>
+<li><p>cut token use as password</p></li>
+<li><p>cat ~/token.txt</p></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
